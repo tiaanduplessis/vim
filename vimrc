@@ -39,17 +39,11 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-" General
 Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
-
-" Prolog
-Plugin 'soli/prolog-vim'
-
-" JS
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
