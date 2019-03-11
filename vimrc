@@ -14,13 +14,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'trevordmiller/nova-vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' }
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-endif
 
 call plug#end()
-
 
 "============================================================
 " Settings
@@ -66,7 +63,14 @@ let g:ctrlp_show_hidden=1
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_working_path_mode = 'ra'
 
-let g:deoplete#enable_at_startup = 1
+" Start autocompletion after 4 chars
+let g:ycm_min_num_of_chars_for_completion = 4
+let g:ycm_min_num_identifier_candidate_chars = 4
+let g:ycm_enable_diagnostic_highlighting = 0
+
+" Don't show YCM's preview window
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
 
 "============================================================
 " Mappings
