@@ -3,11 +3,10 @@
 ## Setup
 
 ```sh
-$ git clone --recursive --depth=1 https://github.com/tiaanduplessis/vim.git ~/.vim
-$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+curl -L https://raw.githubusercontent.com/tiaanduplessis/vim/master/setup.sh | bash
 ```
 
-Launch `vim` and run `:PluginInstall`
+Launch `vim` and run `:PlugInstall`
 
 ## License
 

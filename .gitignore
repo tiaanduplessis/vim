@@ -1,1 +1,5 @@
 bundle
+autoload
+colors
+.netrwhist
+plugged
