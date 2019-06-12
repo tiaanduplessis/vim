@@ -16,7 +16,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'trevordmiller/nova-vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer' }
 
-
 call plug#end()
 
 "============================================================
@@ -24,19 +23,20 @@ call plug#end()
 "============================================================
 syntax on
 
+set mouse=a
 set encoding=utf-8
 set smartindent
 set termguicolors
 set t_Co=256
 set backspace=indent,eol,start
 set clipboard^=unnamed
-set shiftwidth=2 
-set tabstop=2 
-set softtabstop=2 
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set expandtab
 set number
 set relativenumber
-set cursorline 
+set cursorline
 set showmatch
 set history=500
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
@@ -56,7 +56,7 @@ let g:jsx_ext_required = 0
 " airline
 let g:airline_powerline_fonts=1
 
-let g:vim_jsx_pretty_colorful_config = 1 
+let g:vim_jsx_pretty_colorful_config = 1
 
 " ctrlpvim/ctrlp.vim
 let g:ctrlp_show_hidden=1
